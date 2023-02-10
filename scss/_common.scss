@@ -1,0 +1,39 @@
+.hd_container {
+    .hd_wrap {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        .logo {
+            width: 14rem;
+            padding: 2rem;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .gnb {
+            display: none;
+        }
+        .menu {
+            position: absolute;
+            top: 50%;
+            right: 2rem;
+            display: flex;
+            align-items: center;
+            gap:3rem;
+            transform: translateY(-50%);
+            li {
+                a {
+                    display: none;
+                }
+                button {
+                    width: 2rem;
+                    height: 1.7rem;
+                    background: url('../images/header/ham.png') center center / cover no-repeat;
+                }
+            }
+        }
+    }
+}

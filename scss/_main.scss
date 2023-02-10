@@ -1,10 +1,372 @@
-div {
-    font-family: 'PyeongChangPeace';
-    font-size: 4rem;
-    font-weight: 600;
+main {
+    font-size: 1.6rem;
 }
-p {
-    font-family: 'PyeongChang';
-    font-size: 4rem;
-    font-weight:700;
+
+.visual_container {
+    position: relative;
+    margin-top: -9.3rem;
+    width: 100%;
+    height: auto;
+    background: url('../images/mainvisual/mv_bg2.png') center center / cover no-repeat;
+    z-index: -2;
+    .visual_wrap {
+        max-width: 166rem;
+        margin: 0 auto;
+        color:$wh;
+        .visual_box {
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .moon {
+                    width: 13rem;
+                    height: 13rem;
+                    padding-top: 10rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .txtbox {
+                    position: relative;
+                    .main_txt {
+                        font-family: $peace;
+                        text-align: center;
+                        .txt {
+                            font-weight: bold;
+                            font-size: 10rem;
+                            letter-spacing: 0.8rem;
+                            line-height: 1.1;
+                        }
+                        .txt2 {
+                            position: relative;
+                            font-size: 3rem;
+                            font-weight: 500;
+                            padding-left: 10rem;
+                            &::before {
+                                position: absolute;
+                                top:50%;
+                                left:6.5rem;
+                                width: 9rem;
+                                height: 0.1rem;
+                                background-color: $wh;
+                                transform: translateY(-50%);
+                                content: '';
+                            }
+                        }
+                        .sub_txt {
+                            padding-top: 3rem;
+                            font-family: $pyeong;
+                            text-align: left;
+                            .subtxt1 {
+                                font-family: $peace;
+                                font-size: 2rem;
+                            }
+                            .subtxt2 {
+                                display: none;
+                                padding-top: 11rem;
+                                font-size: 1.8rem;
+                            }
+                            .subtxt3 {
+                                padding-top: 2rem;
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .imgbox {
+        position: relative;
+        width: 100%;
+        margin-top: 6rem;
+        padding-bottom: 18rem;
+        z-index: -1;
+        &::after {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../images/mainvisual/mv_2_building.png') center center / cover no-repeat;
+            content: '';
+        }
+    }
+    .visual_label_pc {
+        display: none;
+    }
+    .visual_label_mo {
+        position: relative;
+        width: 100%;
+        margin-top: 5rem;
+        background-color: #ffe103;
+        .mo_title {
+            position: absolute;
+            top:-5rem;
+            left: 50%;
+            padding: 1rem 4rem 3rem 4rem;
+            font-family: $peace;
+            font-size: 2.4rem;
+            font-weight: bold;
+            border-radius: 3rem;
+            background-color: #ffe103;
+            transform: translateX(-50%);
+            z-index: -1;
+            &::before {
+                position: absolute;
+                top:1.5rem;
+                left: 1.3rem;
+                width: 2.3rem;
+                height: 2.3rem;
+                background: url('../images/mainvisual/mv_3_star.png') center center / cover no-repeat;
+                content: '';
+            }
+            &::after {
+                position: absolute;
+                top:1.5rem;
+                right: 1.3rem;
+                width: 2.3rem;
+                height: 2.3rem;
+                background: url('../images/mainvisual/mv_3_star.png') center center / cover no-repeat;
+                content: '';
+            }
+        }
+        .mo_notice {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem;
+            font-weight: 700;
+        }
+    }
+}
+.video_container {
+    position: relative;
+    width: 100%;
+    height: 180.7rem;
+    background: url('../images/section1_video/section1_bg.png') no-repeat ;
+    background-position: center;
+    .video_wrap {
+        max-width: 166rem;
+        margin: 0 auto;
+        .video_txtbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 18rem;
+            .moon {
+                width: 13rem;
+                height: 13rem;
+                padding-top: 10rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            >ul {
+                display: flex;
+                margin-top: -4rem;
+                li {
+                    font-family: $peace;
+                    font-weight: bold;
+                    font-size: 10rem;
+                    color:$wh;
+                    &:nth-child(1) {
+                        position: relative;
+                        left: 2rem;
+                    }
+                    &:nth-child(2) {
+                        width: 9rem;
+                        font-size: 3rem;
+                        font-weight: 500;
+                        transform: rotate(90deg) translateY(35%);
+                        text-align: center;
+                    }
+                    &:nth-child(3) {
+                        position: relative;
+                        right: 2rem;
+                    }
+                }
+            }
+            .video_txt {
+                padding-top: 8rem;
+                font-family: $pyeong;
+                font-size: 2.5rem;
+                color:$wh;
+                text-align: center;
+            }
+        }
+        .video_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-top: 10rem;
+            .video {
+                position: relative;
+                width: 50%;
+                padding-bottom: 55rem;
+                border-radius: 1rem;
+                &::after {
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $bk;
+                    opacity: 0.1;
+                    z-index: 2;
+                    content: '';
+                }
+                iframe {
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 0.1rem solid transparent;
+                    border-radius: 1rem;
+                }
+            }
+            .video_link {
+                a {
+                    position: relative;
+                    display:block;
+                    margin-top: 7rem;
+                    padding: 1.5rem 6rem 1.5rem 3rem;
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    color:$bk;
+                    border-radius: 3rem;
+                    background-color: #ffe103;
+                    text-align: center;
+                    transition: 0.3s;
+                    &:hover {
+                        scale: 1.01;
+                    }
+                    span {
+                        position: absolute;
+                        top:50%;
+                        right: 2.8rem;
+                        width: 1.7rem;
+                        height: 1.5rem;
+                        background: url('../images/section1_video/section1_arrow.png') center center / cover no-repeat;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
+.night_container {
+    position: relative;
+    background: url('../images/bg_star.png') no-repeat ;
+    z-index: -2;
+    .night_wrap {
+        max-width: 166rem;
+        margin: 0 auto;
+        .night_title_box {
+            position: relative;
+            top:15rem;
+            color:$wh;
+            text-align: center;
+            .night_title {
+                position: relative;
+                display: inline-block;
+                font-size: 4.8rem;
+                font-weight: 700;
+                >span {
+                    position: absolute;
+                    right: -13.5rem;
+                    top:-8rem;
+                    width: 18.3rem;
+                    height: 18rem;
+                    background: url('../images/section2_8night/section2_chinese.png') center / cover no-repeat;
+                    z-index: -1;
+                }
+            }
+            .night_sub {
+                padding-top: 2rem;
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+        }
+        .night_swiper {
+            .night_box {
+                text-align: center;
+                .night1 {
+                    .slide_title_box {
+                        position: relative;
+                        top:19rem;
+                        z-index: 1;
+                        .number {
+                            font-family: $noto;
+                            font-size: 6rem;
+                            font-weight: 600;
+                            color:#878b8e;
+                        }
+                        .slide_title {
+                            font-family: $peace;
+                            font-weight: bold;
+                            font-size: 12rem;
+                            color:$wh;
+                        }
+                        .slide_last {
+                            font-family: $pyeong;
+                            font-size: 2.8rem;
+                            color:$wh;
+                        }
+                    }
+                    .night_img {
+                        position: relative;
+                        width: 138rem;
+                        height: 80rem;
+                        max-width: 90%;
+                        margin: 0 auto;
+                        background: url('../images/section2_8night/section2_1.png') no-repeat;
+                        background-size: center;
+                        &::before {
+                            position: absolute;
+                            top:3rem;
+                            left: 38rem;
+                            width: 7.4rem;
+                            height: 7.4rem;
+                            background: url('../images/section2_8night/section2_obj_1.png');
+                            content: '';
+                            animation: rotate_image 10s linear infinite;
+                            transform-origin: 50% 50%;
+                        }
+                        &::after {
+                            position: absolute;
+                            top:3rem;
+                            right: 25rem;
+                            width: 23rem;
+                            height: 22.9rem;
+                            background: url('../images/section2_8night/section2_obj_2.png');
+                            background-size: center center;
+                            z-index: -1;
+                            content: '';
+                            animation: rotate_image 20s linear infinite;
+                            transform-origin: 50% 50%;
+                        }
+                        @keyframes rotate_image{
+                            100% {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+                    .slide_sub {
+                        li {}
+                    }
+                }
+                .night2 {}
+                .night3 {}
+                .night4 {}
+                .night5 {}
+                .night6 {}
+                .night7 {}
+                .night8 {}
+            }
+        }
+    }
 }
