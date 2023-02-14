@@ -6,7 +6,6 @@ main {
     position: relative;
     margin-top: -9.3rem;
     width: 100%;
-    height: auto;
     background: url('../images/mainvisual/mv_bg2.png') center center / cover no-repeat;
     z-index: -2;
     .visual_wrap {
@@ -143,9 +142,22 @@ main {
 .video_container {
     position: relative;
     width: 100%;
-    height: 180.7rem;
-    background: url('../images/section1_video/section1_bg.png') no-repeat ;
-    background-position: center;
+    background: url('../images/mb_bg.png') center center / cover no-repeat ;
+    .build_img {
+        position: relative;
+        width: 100%;
+        padding-bottom: 16rem;
+        &::after {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../images/section1_video/mb_building.png') center center / cover no-repeat;
+            opacity: 0.3;
+            content: '';
+        }
+    }
     .video_wrap {
         max-width: 166rem;
         margin: 0 auto;
@@ -153,11 +165,11 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 18rem;
+            // padding-top: 18rem;
             .moon {
                 width: 13rem;
                 height: 13rem;
-                padding-top: 10rem;
+                // padding-top: 10rem;
                 img {
                     width: 100%;
                     height: 100%;
@@ -165,33 +177,33 @@ main {
             }
             >ul {
                 display: flex;
-                margin-top: -4rem;
+                margin-top: -2rem;
                 li {
                     font-family: $peace;
                     font-weight: bold;
-                    font-size: 10rem;
+                    font-size: 6rem;
                     color:$wh;
                     &:nth-child(1) {
                         position: relative;
-                        left: 2rem;
+                        left: 3rem;
                     }
                     &:nth-child(2) {
                         width: 9rem;
-                        font-size: 3rem;
+                        font-size: 2rem;
                         font-weight: 500;
                         transform: rotate(90deg) translateY(35%);
                         text-align: center;
                     }
                     &:nth-child(3) {
                         position: relative;
-                        right: 2rem;
+                        right: 3rem;
                     }
                 }
             }
             .video_txt {
-                padding-top: 8rem;
+                padding-top: 2rem;
                 font-family: $pyeong;
-                font-size: 2.5rem;
+                font-size: 2.2rem;
                 color:$wh;
                 text-align: center;
             }
@@ -200,24 +212,14 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
-            padding-top: 10rem;
+            max-width: 95%;
+            margin: 0 auto;
+            padding-top: 3rem;
             .video {
                 position: relative;
-                width: 50%;
-                padding-bottom: 55rem;
+                width: 100%;
+                padding-bottom: 25rem;
                 border-radius: 1rem;
-                &::after {
-                    position: absolute;
-                    top:0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: $bk;
-                    opacity: 0.1;
-                    z-index: 2;
-                    content: '';
-                }
                 iframe {
                     position: absolute;
                     top:0;
@@ -232,10 +234,10 @@ main {
                 a {
                     position: relative;
                     display:block;
-                    margin-top: 7rem;
+                    margin-top: 4rem;
                     padding: 1.5rem 6rem 1.5rem 3rem;
-                    font-size: 2.4rem;
-                    font-weight: 600;
+                    font-size: 1.8rem;
+                    font-weight: bold;
                     color:$bk;
                     border-radius: 3rem;
                     background-color: #ffe103;
@@ -260,8 +262,9 @@ main {
 }
 .night_container {
     position: relative;
-    background: url('../images/bg_star.png') no-repeat ;
-    z-index: -2;
+    width: 100%;
+    height: 150rem;
+    background: url('../images/bg_star2.png') center center / cover no-repeat ;
     .night_wrap {
         max-width: 166rem;
         margin: 0 auto;
@@ -273,20 +276,19 @@ main {
             .night_title {
                 position: relative;
                 display: inline-block;
-                font-size: 4.8rem;
+                font-size: 3rem;
                 font-weight: 700;
-                >span {
-                    position: absolute;
-                    right: -13.5rem;
-                    top:-8rem;
-                    width: 18.3rem;
-                    height: 18rem;
-                    background: url('../images/section2_8night/section2_chinese.png') center / cover no-repeat;
-                    z-index: -1;
-                }
+                // >span {
+                //     position: absolute;
+                //     right: -13.5rem;
+                //     top:-8rem;
+                //     width: 18.3rem;
+                //     height: 18rem;
+                //     background: url('../images/section2_8night/section2_chinese.png') center / cover no-repeat;
+                // }
             }
             .night_sub {
-                padding-top: 2rem;
+                padding-top: 1rem;
                 font-size: 1.8rem;
                 font-weight: 500;
             }
@@ -294,79 +296,250 @@ main {
         .night_swiper {
             .night_box {
                 text-align: center;
-                .night1 {
+                .night {
+                    position: relative;
                     .slide_title_box {
                         position: relative;
-                        top:19rem;
+                        top:16rem;
                         z-index: 1;
                         .number {
                             font-family: $noto;
-                            font-size: 6rem;
+                            font-size: 3rem;
                             font-weight: 600;
                             color:#878b8e;
                         }
                         .slide_title {
                             font-family: $peace;
                             font-weight: bold;
-                            font-size: 12rem;
+                            font-size: 5rem;
                             color:$wh;
                         }
                         .slide_last {
                             font-family: $pyeong;
-                            font-size: 2.8rem;
+                            font-size: 1.6rem;
                             color:$wh;
                         }
                     }
                     .night_img {
                         position: relative;
-                        width: 138rem;
-                        height: 80rem;
-                        max-width: 90%;
-                        margin: 0 auto;
-                        background: url('../images/section2_8night/section2_1.png') no-repeat;
-                        background-size: center;
+                        max-width: 99%;
+                        margin: 10rem auto 0 auto;
+                        padding-bottom: 27rem;
                         &::before {
                             position: absolute;
-                            top:3rem;
-                            left: 38rem;
-                            width: 7.4rem;
-                            height: 7.4rem;
-                            background: url('../images/section2_8night/section2_obj_1.png');
+                            top:0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
                             content: '';
-                            animation: rotate_image 10s linear infinite;
-                            transform-origin: 50% 50%;
+                        }
+                        span {
+                            position: absolute;
+                            top:5rem;
+                            left: 20%;
+                            width: 3rem;
+                            height: 3rem;
+                            background: url('../images/section2_8night/section2_obj_1.png') center center / cover no-repeat;
                         }
                         &::after {
                             position: absolute;
-                            top:3rem;
-                            right: 25rem;
-                            width: 23rem;
-                            height: 22.9rem;
-                            background: url('../images/section2_8night/section2_obj_2.png');
-                            background-size: center center;
-                            z-index: -1;
+                            top: 3rem;
+                            right: 10%;
+                            width: 10rem;
+                            height: 10rem;
+                            background: url('../images/section2_8night/section2_obj_2.png') center center / cover no-repeat;
                             content: '';
-                            animation: rotate_image 20s linear infinite;
-                            transform-origin: 50% 50%;
+                            z-index: -1;
                         }
-                        @keyframes rotate_image{
-                            100% {
-                                transform: rotate(360deg);
-                            }
+                    }
+                    .prev {
+                        position: absolute;
+                        bottom:34rem;
+                        left: 2rem;
+                        display: block;
+                        width: 10rem;
+                        height: 3rem;
+                        font-family: $peace;
+                        font-weight: bold;
+                        font-size: 1.8rem;
+                        border-radius: 50%;
+                        background-color: #eebb1f;
+                        cursor: pointer;
+                        z-index: 1;
+                        .left {
+                            display: inline-block;
+                            width: 1rem;
+                            height: 1rem;
+                            margin-right: 0.5rem;
+                            background: url('../images/section2_8night/section2_obj_3_arrow_l.png') center center / cover no-repeat;
+                        }
+                        .number_title {
+                            font-family: $noto;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                        }
+                    }
+                    .next {
+                        position: absolute;
+                        right: 2rem;
+                        bottom: 34rem;
+                        display: block;
+                        width: 10rem;
+                        height: 3rem;
+                        font-family: $peace;
+                        font-weight: bold;
+                        font-size: 1.8rem;
+                        border-radius: 50%;
+                        color:$wh;
+                        background-color: #9539e3;
+                        cursor: pointer;
+                        z-index: 1;
+                        .right {
+                            display: inline-block;
+                            width: 1rem;
+                            height: 1rem;
+                            margin-left: 0.5rem;
+                            background: url('../images/section2_8night/section2_obj_4_arrow_r.png') center center / cover no-repeat;
+                        }
+                        .number_title {
+                            font-family: $noto;
+                            font-size: 1.5rem;
+                            font-weight: 600;
                         }
                     }
                     .slide_sub {
-                        li {}
+                        display: flex;
+                        flex-wrap: wrap;
+                        max-width: 95%;
+                        margin: 0 auto;
+                        text-align: left;
+                        li {
+                            width: 100%;
+                            padding-top: 1rem;
+                            font-size: 1.6rem;
+                            color:$wh;
+                            span {
+                                display: inline-block;
+                                width: 1.3rem;
+                                height: 1.3rem;
+                                margin-right: 1rem;
+                                background: url('../images/section2_8night/section2_obj_4_star.png') center center / cover no-repeat;
+                            }
+                        }
                     }
                 }
-                .night2 {}
-                .night3 {}
-                .night4 {}
-                .night5 {}
-                .night6 {}
-                .night7 {}
-                .night8 {}
+                .night1 {
+                    .night_img {
+                        &::before {
+                            background: url('../images/section2_8night/section2_1.png') center center / contain no-repeat;
+                        }
+                    }
+                }
+                .night2 {
+                    .night_img {
+                        &::before {
+                            background: url('../images/section2_8night/section2_2.png') center center / contain no-repeat;
+                        }
+                    }
+                }
+                .night3 {
+                    .night_img {
+                        &::before {
+                            background: url('../images/section2_8night/section2_3.png') center center / contain no-repeat;
+                        }
+                    }
+                    .prev {
+                        bottom:37.5rem;
+                    }
+                    .next {
+                        bottom: 37.5rem;
+                    }
+                }
+                .night4 {
+                    .night_img {
+                        &::before {
+                            background: url('../images/section2_8night/section2_4.png') center center / contain no-repeat;
+                        }
+                    }
+                    .prev {
+                        bottom:44.6rem;
+                    }
+                    .next {
+                        bottom: 44.6rem;
+                    }
+                }
+                .night5 {
+                    .night_img {
+                        &::before {
+                            background: url('../images/section2_8night/section2_5.png') center center / contain no-repeat;
+                        }
+                    }
+                    .prev {
+                        bottom:41.1rem;
+                    }
+                    .next {
+                        bottom: 41.1rem;
+                    }
+                }
+                .night6 {
+                    .night_img {
+                        &::before {
+                            background: url('../images/section2_8night/section2_6.png') center center / contain no-repeat;
+                        }
+                    }
+                }
+                .night7 {
+                    .night_img {
+                        &::before {
+                            background: url('../images/section2_8night/section2_7.png') center center / contain no-repeat;
+                        }
+                    }
+                    .prev {
+                        bottom:30.4rem;
+                    }
+                    .next {
+                        bottom: 30.4rem;
+                    }
+                }
+                .night8 {
+                    .night_img {
+                        &::before {
+                            background: url('../images/section2_8night/section2_8.png') center center / contain no-repeat;
+                        }
+                    }
+                    .prev {
+                        bottom:30.4rem;
+                    }
+                    .next {
+                        bottom: 30.4rem;
+                    }
+                }
             }
+        }
+    }
+    .cloudbox {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .cloud {
+            text-indent: -9999rem;
+        }
+        .cloud1 {
+            display: none;
+        }
+        .cloud2 {
+            display: none;
+        }
+        .cloud3 {
+           display: none;
+        }
+        .cloud4 {
+            position: absolute;
+            right: 0rem;
+            bottom: 70rem;
+            width: 40rem;
+            height: 40rem;
+            background: url('../images/section2_8night/sec2_cloud_right_front.png') center center / cover no-repeat;
         }
     }
 }

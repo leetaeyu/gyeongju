@@ -18,13 +18,305 @@
             }
         }
     }
+    .video_container {
+        .build_img {
+            padding-bottom: 33rem;
+        }
+        .video_wrap {
+            .video_txtbox {
+                >ul {
+                    li {
+                        font-size: 7rem;
+                        &:nth-child(2) {
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+                .video_txt {
+                    font-size: 2.4rem;
+                }
+            }
+            .video_box {
+                .video {
+                    padding-bottom: 50rem;
+                }
+            }
+        }
+    }
+    .night_container {
+        .night_wrap {
+            .night_title_box {
+                .night_title {
+                    font-size: 3.8rem;
+
+                }
+                .night_sub {
+                    padding-top: 2rem;
+                    font-size: 1.8rem;
+                }
+            }
+            .night_swiper {
+                .night_box {
+                    .night {
+                        .slide_title_box {
+                            top:19rem;
+                            .number {
+                                font-size: 4rem;
+                            }
+                            .slide_title {
+                                font-size: 8rem;
+                            }
+                            .slide_last {
+                                font-size: 2rem;
+                            }
+                        }
+                        .night_img {
+                            max-width: 85%;
+                            padding-bottom: 43rem;
+                            span {
+                                top:2rem;
+                                left: 28%;
+                                width: 5rem;
+                                height: 5rem;
+                                animation: rotate_image 15s linear infinite;
+                                transform-origin: 50% 50%;
+                            }
+                            &::after {
+                                top: 1rem;
+                                right: 18%;
+                                width: 15rem;
+                                height: 15rem;
+                                animation: rotate_image 20s linear infinite;
+                                transform-origin: 50% 50%;
+                            }
+                            @keyframes rotate_image{
+                                100% {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+                        .prev {
+                            bottom:20rem;
+                            left: 1rem;
+                            width: 15rem;
+                            height: 5rem;
+                            font-size: 2rem;
+                            .left {
+                                width: 1.6rem;
+                                height: 1.2rem;
+                                margin-right: 1rem;
+                            }
+                            .number_title {
+                                font-size: 1.8rem;
+                            }
+                        }
+                        .next {
+                            right: 1rem;
+                            bottom:20rem;
+                            width: 15rem;
+                            height: 5rem;
+                            font-size: 2rem;
+                            .right {
+                                width: 1.6rem;
+                                height: 1.2rem;
+                                margin-left: 1rem;
+                            }
+                            .number_title {
+                                font-size: 1.8rem;
+                            }
+                        }
+                        .slide_sub {
+                            max-width: 56.5%;
+                            li {
+                                width: 50%;
+                                padding-top: 2rem;
+                                font-size: 1.9rem;
+                            }
+                        }
+                    }
+                    .night3 {
+                        .prev {
+                            bottom:25.2rem;
+                        }
+                        .next {
+                            bottom: 25.2rem;
+                        }
+                    }
+                    .night4 {
+                        .prev {
+                            bottom:30.2rem;
+                        }
+                        .next {
+                            bottom: 30.2rem;
+                        }
+                    }
+                    .night5 {
+                        .prev {
+                            bottom:25.2rem;
+                        }
+                        .next {
+                            bottom: 25.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .cloudbox {
+            .cloud {
+                opacity: 0;
+            }
+            .cloud1 {
+                display: block;
+                position: absolute;
+                left: -5rem;
+                bottom: 40rem;
+                width: 40rem;
+                height: 40rem;
+                background: url('../images/section2_8night/sec2_cloud_left_back.png') center center / cover no-repeat;
+                animation: left_back;
+                animation-duration:3s;
+                animation-iteration-count:infinite;
+            }
+            .cloud2 {
+                display: block;
+                position: absolute;
+                left: -5rem;
+                bottom: 45rem;
+                width: 40rem;
+                height: 40rem;
+                background: url('../images/section2_8night/sec2_cloud_left_front.png') center center / cover no-repeat;
+                animation: left_front;
+                animation-duration:3s;
+                animation-delay:2s;
+                animation-iteration-count:infinite;
+            }
+            .cloud3 {
+                display: block;
+                position: absolute;
+                right: -5rem;
+                bottom: 40rem;
+                width: 40rem;
+                height: 40rem;
+                background: url('../images/section2_8night/sec2_cloud_right_back.png') center center / cover no-repeat;
+                animation: right_back; 
+                animation-duration:3s;
+                animation-iteration-count:infinite;
+            }
+            .cloud4 {
+                position: absolute;
+                right: -5rem;
+                bottom: 45rem;
+                width: 40rem;
+                height: 40rem;
+                background: url('../images/section2_8night/sec2_cloud_right_front.png') center center / cover no-repeat;
+                animation: right_front; 
+                animation-duration:3s;
+                animation-delay:2s;
+                animation-iteration-count:infinite;
+            }
+            @keyframes right_back{
+                0%{opacity: 0; transform: translate(0,0);}
+                50%{opacity: 1;  transform: translate(-50px,-50px);}
+                100%{opacity: 0; transform: translate(0,0)}
+            }
+            @keyframes right_front{
+                0%{opacity: 0; transform: translate(0,0);}
+                50%{opacity: 1;  transform: translate(-50px,50px);}
+                100%{opacity: 0; transform: translate(0,0)}
+            }
+            @keyframes left_back{
+                0%{opacity: 0; transform: translate(0,0);}
+                50%{opacity: 1;  transform: translate(50px,-50px);}
+                100%{opacity: 0; transform: translate(0,0)}
+            }
+            @keyframes left_front{
+                0%{opacity: 0; transform: translate(0,0);}
+                50%{opacity: 1;  transform: translate(50px,50px);}
+                100%{opacity: 0; transform: translate(0,0)}
+            }
+        }
+    }
 }
 
 /* 태블릿만 768px~1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {}
 
 /* PC부터 1024px~ */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .night_container {
+        .night_wrap {
+            .night_swiper {
+                .night_box {
+                    .night {
+                        .night_img {
+                            padding-bottom: 50rem;
+                        }
+                        .prev {
+                            width: 19rem;
+                        }
+                        .next {
+                            width: 19rem;
+                        }
+                    }
+                }
+            }
+        }
+        .cloudbox {
+            .cloud {
+                opacity: 0;
+            }
+            .cloud1 {
+                display: block;
+                position: absolute;
+                left: -5rem;
+                bottom: 40rem;
+                width: 40rem;
+                height: 40rem;
+                background: url('../images/section2_8night/sec2_cloud_left_back.png') center center / cover no-repeat;
+                animation: left_back;
+                animation-duration:3s;
+                animation-iteration-count:infinite;
+            }
+            .cloud2 {
+                display: block;
+                position: absolute;
+                left: -5rem;
+                bottom: 45rem;
+                width: 40rem;
+                height: 40rem;
+                background: url('../images/section2_8night/sec2_cloud_left_front.png') center center / cover no-repeat;
+                animation: left_front;
+                animation-duration:3s;
+                animation-delay:2s;
+                animation-iteration-count:infinite;
+            }
+            .cloud3 {
+                display: block;
+                position: absolute;
+                right: -5rem;
+                bottom: 40rem;
+                width: 40rem;
+                height: 40rem;
+                background: url('../images/section2_8night/sec2_cloud_right_back.png') center center / cover no-repeat;
+                animation: right_back; 
+                animation-duration:3s;
+                animation-iteration-count:infinite;
+            }
+            .cloud4 {
+                position: absolute;
+                right: -5rem;
+                bottom: 45rem;
+                width: 40rem;
+                height: 40rem;
+                background: url('../images/section2_8night/sec2_cloud_right_front.png') center center / cover no-repeat;
+                animation: right_front; 
+                animation-duration:3s;
+                animation-delay:2s;
+                animation-iteration-count:infinite;
+            }
+        }
+    }
+}
 
 /* 작은 PC 1024px~1279px */
 @media screen and (min-width: 1024px) and (max-width: 1279px) {}
@@ -32,55 +324,14 @@
 /* PC 1280px~ */
 @media screen and (min-width: 1280px) {
     .visual_container {
-        position: relative;
-        margin-top: -9.3rem;
-        width: 100%;
-        height: auto;
-        background: url('../images/mainvisual/mv_bg2.png') center center / cover no-repeat;
-        z-index: -2;
         .visual_wrap {
-            max-width: 166rem;
-            margin: 0 auto;
-            color:$wh;
             .visual_box {
                 .item {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .moon {
-                        width: 13rem;
-                        height: 13rem;
-                        padding-top: 10rem;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
                     .txtbox {
-                        position: relative;
                         .main_txt {
-                            font-family: $peace;
-                            text-align: center;
-                            .txt {
-                                font-weight: bold;
-                                font-size: 10rem;
-                                letter-spacing: 0.8rem;
-                                line-height: 1.1;
-                            }
                             .txt2 {
-                                position: relative;
-                                font-size: 3rem;
-                                font-weight: 500;
-                                padding-left: 10rem;
                                 &::before {
-                                    position: absolute;
-                                    top:50%;
                                     left:0;
-                                    width: 9rem;
-                                    height: 0.1rem;
-                                    background-color: $wh;
-                                    transform: translateY(-50%);
-                                    content: '';
                                 }
                             }
                             .sub_txt {
@@ -88,20 +339,8 @@
                                 top:0;
                                 right: -35rem;
                                 padding-top: inherit;
-                                font-family: $pyeong;
-                                text-align: left;
-                                .subtxt1 {
-                                    font-family: $peace;
-                                    font-size: 2rem;
-                                }
                                 .subtxt2 {
                                     display: block;
-                                    padding-top: 11rem;
-                                    font-size: 1.8rem;
-                                }
-                                .subtxt3 {
-                                    padding-top: 2rem;
-                                    font-size: 2.5rem;
                                 }
                             }
                         }
@@ -110,20 +349,8 @@
             }
         }
         .imgbox {
-            position: relative;
-            width: 100%;
-            margin-top: 6rem;
-            padding-bottom: 60rem;
-            z-index: -1;
-            &::after {
-                position: absolute;
-                top:0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: url('../images/mainvisual/mv_2_building.png') center center / cover no-repeat;
-                content: '';
-            }
+            margin-top: 15rem;
+            padding-bottom: 45rem;
         }
         .visual_label_pc {
             display: block;
@@ -248,6 +475,169 @@
         }
         .visual_label_mo {
             display: none;
+        }
+    }
+    .video_container {
+        width: 100%;
+        height: 168rem;
+        background: url('../images/section1_video/section1_bg.png') center center / 100% 100% no-repeat ;
+        .build_img {
+            padding-bottom: 40rem;
+        }
+        .video_wrap {
+            .video_txtbox {
+                >ul {
+                    li {
+                        font-size: 8rem;
+                        &:nth-child(1) {
+                            left: 2rem;
+                        }
+                        &:nth-child(2) {
+                            font-size: 2.4rem;
+                        }
+                        &:nth-child(3) {
+                            right: 2rem;
+                        }
+                    }
+                }
+                .video_txt {
+                    font-size: 2.5rem;
+                }
+            }
+            .video_box {
+                max-width: 50%;
+                padding-top: 8rem;
+                .video {
+                    padding-bottom: 50rem;
+                }
+                .video_link {
+                    a {
+                        margin-top: 6rem;
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .night_container {
+        .night_wrap {
+            .night_title_box {
+                .night_title {
+                    font-size: 4.8rem;
+                }
+                .night_sub {
+                    padding-top: 2rem;
+                }
+            }
+            .night_swiper {
+                .night_box {
+                    .night {
+                        .slide_title_box {
+                            .number {
+                                font-size: 6rem;
+                            }
+                            .slide_title {
+                                font-size: 12rem;
+                            }
+                            .slide_last {
+                                font-size: 2.8rem;
+                            }
+                        }
+                        .night_img {
+                            margin: 0 auto;
+                            padding-bottom: 80rem;
+                            span {
+                                top:3rem;
+                                width: 7.4rem;
+                                height: 7.4rem;
+                            }
+                            &::after {
+                                width: 23rem;
+                                height: 22.9rem;
+                            }
+                        }
+                        .prev {
+                            bottom:29rem;
+                            left: 0;
+                            width: 29.5rem;
+                            height: 6.3rem;
+                            font-size: 2.4rem;
+                            .left {
+                                width: 2rem;
+                                height: 1.5rem;
+                            }
+                            .number_title {
+                                font-size: 2.4rem;
+                            }
+                        }
+                        .next {
+                            right: 0;
+                            bottom: 29rem;
+                            width: 29.5rem;
+                            height: 6.3rem;
+                            font-size: 2.4rem;
+                            .right {
+                                width: 2rem;
+                                height: 1.5rem;
+                            }
+                            .number_title {
+                                font-size: 2.4rem;
+                            }
+                        }
+                        .slide_sub {
+                            li {
+                                font-size: 2.2rem;
+                            }
+                        }
+                    }
+                    .night3 {
+                        .prev {
+                            bottom:34.5rem;
+                        }
+                        .next {
+                            bottom: 34.5rem;
+                        }
+                    }
+                    .night4 {
+                        .prev {
+                            bottom:40rem;
+                        }
+                        .next {
+                            bottom: 40rem;
+                        }
+                    }
+                    .night5 {
+                        .prev {
+                            bottom:34.5rem;
+                        }
+                        .next {
+                            bottom: 34.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .cloudbox {
+            .cloud1 {
+                bottom: 5rem;
+                width: 84.7rem;
+                height: 59.6rem;
+            }
+            .cloud2 {
+                bottom: 5rem;
+                width: 91.6rem;
+                height: 83.8rem;
+            }
+            .cloud3 {
+                bottom: 0;
+                width: 88.5rem;
+                height: 86.4rem;
+            }
+            .cloud4 {
+                bottom: 0;
+                width: 88.5rem;
+                height: 86.4rem;
+            }
         }
     }
 }
