@@ -44,6 +44,7 @@
         }
     }
     .night_container {
+        height: 120rem;
         .night_wrap {
             .night_title_box {
                 .night_title {
@@ -203,6 +204,7 @@
                 animation-iteration-count:infinite;
             }
             .cloud4 {
+                display: block;
                 position: absolute;
                 right: -5rem;
                 bottom: 45rem;
@@ -233,6 +235,37 @@
                 0%{opacity: 0; transform: translate(0,0);}
                 50%{opacity: 1;  transform: translate(50px,50px);}
                 100%{opacity: 0; transform: translate(0,0)}
+            }
+        }
+    }
+    .introduction_container {
+        .introduction_wrap {
+            .introduction_title {
+                h3 {
+                    font-size: 4.8rem;
+                }
+            }
+            .introduction_cate {
+                li {
+                    a {
+                        padding: 2rem 7rem;
+                        font-size: 2.1rem;
+                    }
+                }
+            }
+        }
+        .left_show {
+            width: 840rem;
+            li {
+                width: 36rem;
+                padding-bottom: 28.5rem;
+            }
+        }
+        .right_show {
+            width: 768rem;
+            li {
+                width: 36rem;
+                padding-bottom: 28.5rem;
             }
         }
     }
@@ -520,6 +553,7 @@
         }
     }
     .night_container {
+        height: 150rem;
         .night_wrap {
             .night_title_box {
                 .night_title {
@@ -638,6 +672,12 @@
                 width: 88.5rem;
                 height: 86.4rem;
             }
+        }
+    }
+    .introduction_container {
+        padding-top: 20rem;
+        .more {
+            display: none;
         }
     }
 }

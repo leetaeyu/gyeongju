@@ -263,7 +263,7 @@ main {
 .night_container {
     position: relative;
     width: 100%;
-    height: 150rem;
+    height: 90rem;
     background: url('../images/bg_star2.png') center center / cover no-repeat ;
     .night_wrap {
         max-width: 166rem;
@@ -534,12 +534,131 @@ main {
            display: none;
         }
         .cloud4 {
-            position: absolute;
-            right: 0rem;
-            bottom: 70rem;
-            width: 40rem;
-            height: 40rem;
-            background: url('../images/section2_8night/sec2_cloud_right_front.png') center center / cover no-repeat;
+            display: none;
+        }
+    }
+}
+.introduction_container {
+    width: 100%;
+    background: url('../images/bg_star2.png') center center / cover no-repeat ;
+    .introduction_wrap {
+        max-width: 166rem;
+        margin: 0 auto;
+        .introduction_title {
+            text-align: center;
+            color:$wh;
+            h3 {
+                font-size: 4.2rem;
+            }
+            >div {
+                padding-top: 1rem;
+            }
+        }
+        .introduction_cate {
+            display: flex;
+            justify-content: center;
+            gap: 3.5rem;
+            padding-top: 5rem;
+            li {
+                a {
+                    display: block;
+                    padding: 1rem 4rem;
+                    border: 0.1rem solid $wh;
+                    border-radius: 5rem;
+                    font-size: 1.9rem;
+                    color:$wh;
+                }
+            }
+        }
+    }
+    .left_show {
+        position: relative;
+        display: flex;
+        gap: 2.5rem;
+        width: 640rem;
+        padding-top: 7rem;
+        animation-name: left;
+        animation-duration: 80s;
+        animation-timing-function: linear;
+        animation-iteration-count:infinite;
+        li {
+            position: relative;
+            width: 25rem;
+            padding-bottom: 20rem;
+            a {
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                &:nth-child(1) {margin-left: 2.5rem;}
+                &.intro_img1 {background: url('../images/section3_introduce/section3_1.jpg') center center / cover no-repeat;}
+                &.intro_img2 {background: url('../images/section3_introduce/section3_2.jpg') center center / cover no-repeat;}
+                &.intro_img3 {background: url('../images/section3_introduce/section3_3.jpg') center center / cover no-repeat;}
+                &.intro_img4 {background: url('../images/section3_introduce/section3_4.jpg') center center / cover no-repeat;}
+                &.intro_img5 {background: url('../images/section3_introduce/section3_5.jpg') center center / cover no-repeat;}
+                &.intro_img6 {background: url('../images/section3_introduce/section3_6.jpg') center center / cover no-repeat;}
+                &.intro_img7 {background: url('../images/section3_introduce/section3_7.jpg') center center / cover no-repeat;}
+                &.intro_img8 {background: url('../images/section3_introduce/section3_8.jpg') center center / cover no-repeat;}
+                &.intro_img9 {background: url('../images/section3_introduce/section3_9.jpg') center center / cover no-repeat;}
+                &.intro_img10 {background: url('../images/section3_introduce/section3_10.jpg') center center / cover no-repeat;}
+            }
+        }
+        @keyframes left {
+            0% {transform: translate(0, 0);}
+            100% {transform: translate(-50%, 0);}
+        }
+    }
+    .right_show {
+        position: relative;
+        display: flex;
+        gap: 2.5rem;
+        width: 660rem;
+        padding-top: 2.5rem;
+        animation-name: right;
+        animation-duration: 130s;
+        animation-timing-function: linear;
+        animation-iteration-count:infinite;
+        li {
+            position: relative;
+            width: 25rem;
+            padding-bottom: 20rem;
+            a {
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+                &.intro_img11 {background: url('../images/section3_introduce/section3_11.jpg') center center / cover no-repeat;}
+                &.intro_img12 {background: url('../images/section3_introduce/section3_12.jpg') center center / cover no-repeat;}
+                &.intro_img13 {background: url('../images/section3_introduce/section3_13.jpg') center center / cover no-repeat;}
+                &.intro_img14 {background: url('../images/section3_introduce/section3_14.jpg') center center / cover no-repeat;}
+                &.intro_img15 {background: url('../images/section3_introduce/section3_15.jpg') center center / cover no-repeat;}
+                &.intro_img16 {background: url('../images/section3_introduce/section3_16.jpg') center center / cover no-repeat;}
+                &.intro_img17 {background: url('../images/section3_introduce/section3_17.jpg') center center / cover no-repeat;}
+                &.intro_img18 {background: url('../images/section3_introduce/section3_18.jpg') center center / cover no-repeat;}
+                &.intro_img19 {background: url('../images/section3_introduce/section3_19.jpg') center center / cover no-repeat;}
+            }
+        }
+        @keyframes right {
+            0% {transform: translate(-70%, 0);}
+            100% {transform: translate(5%, 0);}
+        }
+    }
+    .more {
+        a {
+            display: block;
+            width: 15rem;
+            max-width: 95%;
+            margin: 5rem auto 0 auto;
+            padding: 1rem;
+            border: 0.1rem solid $wh;
+            border-radius: 5rem;
+            font-size: 1.9rem;
+            color:$wh;
+            text-align: center;
         }
     }
 }

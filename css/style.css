@@ -410,7 +410,7 @@ main {
 .night_container {
   position: relative;
   width: 100%;
-  height: 150rem;
+  height: 90rem;
   background: url("../images/bg_star2.png") center center/cover no-repeat;
 }
 .night_container .night_wrap {
@@ -644,12 +644,216 @@ main {
   display: none;
 }
 .night_container .cloudbox .cloud4 {
+  display: none;
+}
+
+.introduction_container {
+  width: 100%;
+  background: url("../images/bg_star2.png") center center/cover no-repeat;
+}
+.introduction_container .introduction_wrap {
+  max-width: 166rem;
+  margin: 0 auto;
+}
+.introduction_container .introduction_wrap .introduction_title {
+  text-align: center;
+  color: #fff;
+}
+.introduction_container .introduction_wrap .introduction_title h3 {
+  font-size: 4.2rem;
+}
+.introduction_container .introduction_wrap .introduction_title > div {
+  padding-top: 1rem;
+}
+.introduction_container .introduction_wrap .introduction_cate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.5rem;
+  padding-top: 5rem;
+}
+.introduction_container .introduction_wrap .introduction_cate li a {
+  display: block;
+  padding: 1rem 4rem;
+  border: 0.1rem solid #fff;
+  border-radius: 5rem;
+  font-size: 1.9rem;
+  color: #fff;
+}
+.introduction_container .left_show {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+  width: 640rem;
+  padding-top: 7rem;
+  -webkit-animation-name: left;
+          animation-name: left;
+  -webkit-animation-duration: 80s;
+          animation-duration: 80s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.introduction_container .left_show li {
+  position: relative;
+  width: 25rem;
+  padding-bottom: 20rem;
+}
+.introduction_container .left_show li a {
   position: absolute;
-  right: 0rem;
-  bottom: 70rem;
-  width: 40rem;
-  height: 40rem;
-  background: url("../images/section2_8night/sec2_cloud_right_front.png") center center/cover no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.introduction_container .left_show li a:nth-child(1) {
+  margin-left: 2.5rem;
+}
+.introduction_container .left_show li a.intro_img1 {
+  background: url("../images/section3_introduce/section3_1.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img2 {
+  background: url("../images/section3_introduce/section3_2.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img3 {
+  background: url("../images/section3_introduce/section3_3.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img4 {
+  background: url("../images/section3_introduce/section3_4.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img5 {
+  background: url("../images/section3_introduce/section3_5.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img6 {
+  background: url("../images/section3_introduce/section3_6.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img7 {
+  background: url("../images/section3_introduce/section3_7.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img8 {
+  background: url("../images/section3_introduce/section3_8.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img9 {
+  background: url("../images/section3_introduce/section3_9.jpg") center center/cover no-repeat;
+}
+.introduction_container .left_show li a.intro_img10 {
+  background: url("../images/section3_introduce/section3_10.jpg") center center/cover no-repeat;
+}
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+@keyframes left {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+.introduction_container .right_show {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+  width: 660rem;
+  padding-top: 2.5rem;
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 130s;
+          animation-duration: 130s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.introduction_container .right_show li {
+  position: relative;
+  width: 25rem;
+  padding-bottom: 20rem;
+}
+.introduction_container .right_show li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.introduction_container .right_show li a.intro_img11 {
+  background: url("../images/section3_introduce/section3_11.jpg") center center/cover no-repeat;
+}
+.introduction_container .right_show li a.intro_img12 {
+  background: url("../images/section3_introduce/section3_12.jpg") center center/cover no-repeat;
+}
+.introduction_container .right_show li a.intro_img13 {
+  background: url("../images/section3_introduce/section3_13.jpg") center center/cover no-repeat;
+}
+.introduction_container .right_show li a.intro_img14 {
+  background: url("../images/section3_introduce/section3_14.jpg") center center/cover no-repeat;
+}
+.introduction_container .right_show li a.intro_img15 {
+  background: url("../images/section3_introduce/section3_15.jpg") center center/cover no-repeat;
+}
+.introduction_container .right_show li a.intro_img16 {
+  background: url("../images/section3_introduce/section3_16.jpg") center center/cover no-repeat;
+}
+.introduction_container .right_show li a.intro_img17 {
+  background: url("../images/section3_introduce/section3_17.jpg") center center/cover no-repeat;
+}
+.introduction_container .right_show li a.intro_img18 {
+  background: url("../images/section3_introduce/section3_18.jpg") center center/cover no-repeat;
+}
+.introduction_container .right_show li a.intro_img19 {
+  background: url("../images/section3_introduce/section3_19.jpg") center center/cover no-repeat;
+}
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: translate(-70%, 0);
+            transform: translate(-70%, 0);
+  }
+  100% {
+    -webkit-transform: translate(5%, 0);
+            transform: translate(5%, 0);
+  }
+}
+@keyframes right {
+  0% {
+    -webkit-transform: translate(-70%, 0);
+            transform: translate(-70%, 0);
+  }
+  100% {
+    -webkit-transform: translate(5%, 0);
+            transform: translate(5%, 0);
+  }
+}
+.introduction_container .more a {
+  display: block;
+  width: 15rem;
+  max-width: 95%;
+  margin: 5rem auto 0 auto;
+  padding: 1rem;
+  border: 0.1rem solid #fff;
+  border-radius: 5rem;
+  font-size: 1.9rem;
+  color: #fff;
+  text-align: center;
 }
 
 /* 모바일만 ~767px */
@@ -678,6 +882,9 @@ main {
   }
   .video_container .video_wrap .video_box .video {
     padding-bottom: 50rem;
+  }
+  .night_container {
+    height: 120rem;
   }
   .night_container .night_wrap .night_title_box .night_title {
     font-size: 3.8rem;
@@ -841,6 +1048,7 @@ main {
             animation-iteration-count: infinite;
   }
   .night_container .cloudbox .cloud4 {
+    display: block;
     position: absolute;
     right: -5rem;
     bottom: 45rem;
@@ -991,6 +1199,27 @@ main {
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0);
     }
+  }
+  .introduction_container .introduction_wrap .introduction_title h3 {
+    font-size: 4.8rem;
+  }
+  .introduction_container .introduction_wrap .introduction_cate li a {
+    padding: 2rem 7rem;
+    font-size: 2.1rem;
+  }
+  .introduction_container .left_show {
+    width: 840rem;
+  }
+  .introduction_container .left_show li {
+    width: 36rem;
+    padding-bottom: 28.5rem;
+  }
+  .introduction_container .right_show {
+    width: 768rem;
+  }
+  .introduction_container .right_show li {
+    width: 36rem;
+    padding-bottom: 28.5rem;
   }
 }
 /* 태블릿만 768px~1023px */
@@ -1266,6 +1495,9 @@ main {
     margin-top: 6rem;
     font-size: 2.2rem;
   }
+  .night_container {
+    height: 150rem;
+  }
   .night_container .night_wrap .night_title_box .night_title {
     font-size: 4.8rem;
   }
@@ -1362,6 +1594,12 @@ main {
     bottom: 0;
     width: 88.5rem;
     height: 86.4rem;
+  }
+  .introduction_container {
+    padding-top: 20rem;
+  }
+  .introduction_container .more {
+    display: none;
   }
 }
 @media screen and (max-width: 1400px) {
