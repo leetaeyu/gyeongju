@@ -269,6 +269,26 @@
             }
         }
     }
+    .menu_container {
+        .menu_wrap {
+            >h3 {
+                a {
+                    width: 20rem;
+                    height: 20rem;
+                }
+            }
+            >ul {
+                padding-top: 5rem;
+                li {
+                    height: 17.5rem;
+                    width: calc(100% / 4);
+                    a {
+                        font-size: 2.7rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* 태블릿만 768px~1023px */
@@ -678,6 +698,16 @@
         padding-top: 20rem;
         .more {
             display: none;
+        }
+    }
+    .menu_container {
+        .menu_wrap {
+            >ul {
+                flex-wrap: nowrap;
+                li {
+                    width: 19.5rem;
+                }
+            }
         }
     }
 }

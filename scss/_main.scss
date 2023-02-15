@@ -662,3 +662,71 @@ main {
         }
     }
 }
+.menu_container {
+    position: relative;
+    width: 100%;
+    padding-top: 40rem;
+    background: url('../images/bg_star2.png') center center / cover no-repeat ;
+    .menu_wrap {
+        max-width: 166rem;
+        margin: 0 auto;
+        >h3 {
+            position: absolute;
+            top:20rem;
+            left: 50%;
+            transform: translateX(-50%);
+            a {
+                display: block;
+                width: 15rem;
+                height: 15rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        >ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:2rem;
+            padding-top: 2.5rem;
+            li {
+                position: relative;
+                width: 14rem;
+                height: 12rem;
+                border: 0.1rem solid #333a3f;
+                border-radius: 1rem;
+                cursor: pointer;
+                &:hover {
+                    background-color: #eebb1f;
+                }
+                a {
+                    display: block;
+                    padding: 2rem;
+                    font-size: 1.8rem;
+                    line-height: 1.4;
+                    color:$wh;
+                    span {
+                        position: absolute;
+                        bottom: 2rem;
+                        right: 2rem;
+                        width: 3.9rem;
+                        height: 3.6rem;
+                    }
+                    .menu_item1 {background: url(../images/section4/section4_1.png) center center / cover no-repeat;}
+                    .menu_item2 {background: url(../images/section4/section4_2.png) center center / contain no-repeat;}
+                    .menu_item3 {background: url(../images/section4/section4_3.png) center center / cover no-repeat;}
+                    .menu_item4 {background: url(../images/section4/section4_4.png) center center / contain no-repeat;}
+                    .menu_item5 {background: url(../images/section4/section4_5.png) center center / cover no-repeat;}
+                    .menu_item6 {background: url(../images/section4/section4_6.png) center center / cover no-repeat;}
+                }
+            }
+        }
+    }
+    .menu_bg {
+        width: 100%;
+        height: 26.3rem;
+        background: url('../images/footer/ft_bg.png') center center / cover no-repeat;
+    }
+}

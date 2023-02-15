@@ -37,3 +37,50 @@
         }
     }
 }
+
+.ft_container {
+    background-color: #0a0e11;
+    .ft_wrap {
+        max-width: 166rem;
+        margin: 0 auto;
+        padding-top: 6rem;
+        .ft_item1 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3.5rem;
+        }
+        .ft_item2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:4rem;
+            padding-top: 6.5rem;
+        }
+        address {
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-top: 4rem;
+                li {
+                    a {
+                        display: block;
+                        padding: 0 1rem;
+                        font-size: 1.6rem;
+                        color:#3e474f;
+                        strong {color:#ffe103;}
+                    }
+                }
+            }
+            >div {
+                padding: 2rem 0;
+                font-size: 1.4rem;
+                color:#3e474f;
+                text-align: center;
+            }
+        }
+    }
+
+}
