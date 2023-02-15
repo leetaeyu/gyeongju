@@ -699,7 +699,16 @@ main {
                 border-radius: 1rem;
                 cursor: pointer;
                 &:hover {
-                    background-color: #eebb1f;
+                    background-color: #ffe103;
+                    a {
+                        color:$bk;
+                        .menu_item1 {background: url(../images/section4/section4_1b.png) center center / cover no-repeat;}
+                        .menu_item2 {background: url(../images/section4/section4_2b.png) center center / contain no-repeat;}
+                        .menu_item3 {background: url(../images/section4/section4_3b.png) center center / cover no-repeat;}
+                        .menu_item4 {background: url(../images/section4/section4_4b.png) center center / contain no-repeat;}
+                        .menu_item5 {background: url(../images/section4/section4_5b.png) center center / cover no-repeat;}
+                        .menu_item6 {background: url(../images/section4/section4_6b.png) center center / cover no-repeat;}
+                    }
                 }
                 a {
                     display: block;

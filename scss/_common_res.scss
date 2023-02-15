@@ -48,6 +48,8 @@
 @media screen and (min-width: 1280px) {
     .hd_container {
         .hd_wrap {
+            transition: 0.2s;
+            &.active {background-color: #121b22;}
             .logo {
                 width: 17rem;
             }
@@ -56,15 +58,59 @@
                 position: absolute;
                 top:50%;
                 left: 50%;
+                width: 100%;
                 transform: translate(-50%, -50%);
                 .depth1 {
                     display: flex;
+                    justify-content: center;
                     gap: 6.5rem;
                     li {
                         a {
+                            position: relative;
                             display: block;
                             font-size: 2rem;
                             color:$wh;
+                            &.on {
+                                color:#ffe103;
+                                &::after {
+                                    position: absolute;
+                                    bottom: -2rem;
+                                    left: 50%;
+                                    width: 1.3rem;
+                                    height: 1.3rem;
+                                    background: url('../images/section2_8night/section2_obj_4_star.png')center center / cover no-repeat;
+                                    transform: translateX(-50%);
+                                    content: '';
+                                }
+                            }
+                        }
+                    }
+                }
+                >.depth2 {
+                    position: absolute;
+                    top:6.2rem;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 13rem;
+                    width: 100%;
+                    height: 27rem;
+                    border-top: 0.1rem solid #2a3239;
+                    border-bottom: 0.1rem solid #2a3239;
+                    background-color: #121b22;
+                    opacity: 0;
+                    transition: 0.2s;
+                    z-index: -4;
+                    &.boxon {opacity: 1; z-index: 9999;}
+                    li {
+                        a {
+                            display: block;
+                            margin-top: 5rem;
+                            font-size: 1.7rem;
+                            color:$wh;
+                            &:hover {
+                                color:#ffe103;
+                            }
                         }
                     }
                 }

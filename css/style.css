@@ -903,7 +903,28 @@ main {
   cursor: pointer;
 }
 .menu_container .menu_wrap > ul li:hover {
-  background-color: #eebb1f;
+  background-color: #ffe103;
+}
+.menu_container .menu_wrap > ul li:hover a {
+  color: #000;
+}
+.menu_container .menu_wrap > ul li:hover a .menu_item1 {
+  background: url(../images/section4/section4_1b.png) center center/cover no-repeat;
+}
+.menu_container .menu_wrap > ul li:hover a .menu_item2 {
+  background: url(../images/section4/section4_2b.png) center center/contain no-repeat;
+}
+.menu_container .menu_wrap > ul li:hover a .menu_item3 {
+  background: url(../images/section4/section4_3b.png) center center/cover no-repeat;
+}
+.menu_container .menu_wrap > ul li:hover a .menu_item4 {
+  background: url(../images/section4/section4_4b.png) center center/contain no-repeat;
+}
+.menu_container .menu_wrap > ul li:hover a .menu_item5 {
+  background: url(../images/section4/section4_5b.png) center center/cover no-repeat;
+}
+.menu_container .menu_wrap > ul li:hover a .menu_item6 {
+  background: url(../images/section4/section4_6b.png) center center/cover no-repeat;
 }
 .menu_container .menu_wrap > ul li a {
   display: block;
@@ -1726,6 +1747,10 @@ main {
     width: 15rem;
   }
 }
+body.hidden {
+  overflow: hidden;
+}
+
 .hd_container .hd_wrap {
   position: relative;
   width: 100%;
@@ -1765,6 +1790,130 @@ main {
   width: 2rem;
   height: 1.7rem;
   background: url("../images/header/ham.png") center center/cover no-repeat;
+}
+
+.site_container {
+  position: fixed;
+  top: -120%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/sm_bg.png") center center/cover no-repeat;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.site_container.siteon {
+  top: 0;
+  z-index: 20;
+}
+.site_container .top_menu {
+  position: relative;
+}
+.site_container .top_menu .logo {
+  width: 14rem;
+  padding: 2rem;
+}
+.site_container .top_menu .logo a {
+  display: block;
+}
+.site_container .top_menu .logo a img {
+  width: 100%;
+}
+.site_container .top_menu .menu {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.site_container .top_menu .menu li a {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid #fff;
+  border-radius: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+.site_container .top_menu .menu li button {
+  width: 2rem;
+  height: 1.7rem;
+  background: url("../images/close.btn.png") center center/cover no-repeat;
+}
+.site_container .site_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 120rem;
+  margin: 10rem auto 0 auto;
+}
+.site_container .site_wrap ul {
+  width: 25%;
+  height: 80rem;
+  border-left: 0.1rem solid #2a3239;
+  text-align: center;
+}
+.site_container .site_wrap ul:nth-child(4) {
+  border-right: 0.1rem solid #2a3239;
+}
+.site_container .site_wrap ul li {
+  padding: 2.5rem 0;
+  font-size: 1.6rem;
+}
+.site_container .site_wrap ul li:nth-child(1) {
+  position: relative;
+  padding: 0 0 7rem 0;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.site_container .site_wrap ul li:nth-child(1)::after {
+  position: absolute;
+  top: 7rem;
+  left: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url(../images/section2_8night/section2_obj_4_star.png) center center/cover no-repeat;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+}
+.site_container .site_wrap ul li.depth1_top {
+  position: relative;
+  padding: 16rem 0 7rem 0;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.site_container .site_wrap ul li.depth1_top::after {
+  position: absolute;
+  top: 23rem;
+  left: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url(../images/section2_8night/section2_obj_4_star.png) center center/cover no-repeat;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+}
+.site_container .site_wrap ul li a {
+  color: #fff;
+}
+.site_container .site_wrap ul li a:hover {
+  color: #ffe103;
+}
+.site_container .last_bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 18.9rem;
+  background: url("../images/sm_obj.png") center center/cover no-repeat;
 }
 
 .ft_container {
@@ -1852,6 +2001,13 @@ main {
 /* 작은 PC 1024px~1279px */
 /* PC 1280px~ */
 @media screen and (min-width: 1280px) {
+  .hd_container .hd_wrap {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .hd_container .hd_wrap.active {
+    background-color: #121b22;
+  }
   .hd_container .hd_wrap .logo {
     width: 17rem;
   }
@@ -1860,6 +2016,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -1867,12 +2024,64 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 6.5rem;
   }
   .hd_container .hd_wrap .gnb .depth1 li a {
+    position: relative;
     display: block;
     font-size: 2rem;
     color: #fff;
+  }
+  .hd_container .hd_wrap .gnb .depth1 li a.on {
+    color: #ffe103;
+  }
+  .hd_container .hd_wrap .gnb .depth1 li a.on::after {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: url("../images/section2_8night/section2_obj_4_star.png") center center/cover no-repeat;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: "";
+  }
+  .hd_container .hd_wrap .gnb > .depth2 {
+    position: absolute;
+    top: 6.2rem;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 13rem;
+    width: 100%;
+    height: 27rem;
+    border-top: 0.1rem solid #2a3239;
+    border-bottom: 0.1rem solid #2a3239;
+    background-color: #121b22;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    z-index: -4;
+  }
+  .hd_container .hd_wrap .gnb > .depth2.boxon {
+    opacity: 1;
+    z-index: 9999;
+  }
+  .hd_container .hd_wrap .gnb > .depth2 li a {
+    display: block;
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    color: #fff;
+  }
+  .hd_container .hd_wrap .gnb > .depth2 li a:hover {
+    color: #ffe103;
   }
   .hd_container .hd_wrap .menu li a {
     display: inline-block;
