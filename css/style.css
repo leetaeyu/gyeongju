@@ -3,35 +3,27 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 @font-face {
   font-family: "PyeongChangPeace";
-  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Light.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Light.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Light.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Light.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Light.ttf") format("truetype");
-  font-display: swap;
 }
 @font-face {
   font-family: "PyeongChangPeace";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChangPeace-Bold.ttf") format("truetype");
-  font-display: swap;
 }
 @font-face {
   font-family: "PyeongChang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChang-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Regular.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Regular.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Regular.ttf") format("truetype");
-  font-display: swap;
 }
 @font-face {
   font-family: "PyeongChang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChang-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Bold.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Bold.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Bold.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/webfontworld/PyeongChang/PyeongChang-Bold.ttf") format("truetype");
-  font-display: swap;
 }
 html {
   font-size: 10px;
@@ -170,7 +162,7 @@ main {
 .visual_container .visual_wrap .visual_box .item .txtbox .main_txt .txt2 {
   position: relative;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 400;
   padding-left: 10rem;
 }
 .visual_container .visual_wrap .visual_box .item .txtbox .main_txt .txt2::before {
@@ -333,7 +325,7 @@ main {
 .video_container .video_wrap .video_txtbox > ul li:nth-child(2) {
   width: 9rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: rotate(90deg) translateY(35%);
           transform: rotate(90deg) translateY(35%);
   text-align: center;
@@ -962,6 +954,53 @@ main {
   width: 100%;
   height: 26.3rem;
   background: url("../images/footer/ft_bg.png") center center/cover no-repeat;
+}
+
+.ani_top {
+  opacity: 0;
+  -webkit-transform: translateY(15rem);
+          transform: translateY(15rem);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.ani_left {
+  opacity: 0;
+  -webkit-transform: translateX(-15rem);
+          transform: translateX(-15rem);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fade_in {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.delay01 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.delay02 {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.delay03 {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.delay04 {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.delay05 {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 /* 모바일만 ~767px */
@@ -1786,41 +1825,62 @@ body.hidden {
 .hd_container .hd_wrap .menu li a {
   display: none;
 }
-.hd_container .hd_wrap .menu li button {
+.hd_container .hd_wrap .menu li .ham_on {
+  display: none;
+}
+.hd_container .hd_wrap .menu li .mo_ham_on {
   width: 2rem;
   height: 1.7rem;
   background: url("../images/header/ham.png") center center/cover no-repeat;
 }
 
 .site_container {
+  display: none;
+}
+
+.modal {
+  display: none;
   position: fixed;
-  top: -120%;
-  bottom: 0;
-  left: 0;
+  top: 0;
   width: 100%;
   height: 100vh;
-  background: url("../images/sm_bg.png") center center/cover no-repeat;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 100;
 }
-.site_container.siteon {
-  top: 0;
-  z-index: 20;
-}
-.site_container .top_menu {
-  position: relative;
-}
-.site_container .top_menu .logo {
-  width: 14rem;
-  padding: 2rem;
-}
-.site_container .top_menu .logo a {
+.modal.modal_on {
   display: block;
 }
-.site_container .top_menu .logo a img {
+
+.mo_site_container .mo_site_wrap {
+  position: fixed;
+  right: -100rem;
+  top: 0;
+  width: 32rem;
+  height: 100vh;
+  overflow: auto;
+  z-index: 101;
+  -webkit-transition: right 0.7s;
+  transition: right 0.7s;
+  background: url("../images/mb_bg.png") center center/cover no-repeat;
+}
+.mo_site_container .mo_site_wrap.mo_right {
+  right: 0;
+}
+.mo_site_container .mo_site_wrap .top_menu {
+  position: relative;
+}
+.mo_site_container .mo_site_wrap .top_menu .logo {
+  width: 12rem;
+  padding: 2rem;
+}
+.mo_site_container .mo_site_wrap .top_menu .logo a {
+  display: block;
+}
+.mo_site_container .mo_site_wrap .top_menu .logo a img {
   width: 100%;
 }
-.site_container .top_menu .menu {
+.mo_site_container .mo_site_wrap .top_menu .menu {
   position: absolute;
   top: 50%;
   right: 2rem;
@@ -1834,7 +1894,7 @@ body.hidden {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.site_container .top_menu .menu li a {
+.mo_site_container .mo_site_wrap .top_menu .menu li a {
   display: inline-block;
   padding: 0.3rem 1rem;
   font-size: 1.4rem;
@@ -1843,77 +1903,75 @@ body.hidden {
   color: #fff;
   text-align: center;
 }
-.site_container .top_menu .menu li button {
+.mo_site_container .mo_site_wrap .top_menu .menu li button {
   width: 2rem;
   height: 1.7rem;
   background: url("../images/close.btn.png") center center/cover no-repeat;
 }
-.site_container .site_wrap {
+.mo_site_container .mo_site_wrap .mo_depth1_box {
+  position: relative;
+}
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul {
+  padding: 1.5rem 0;
+}
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul:nth-child(1) {
+  border-top: 0.1rem solid #3e474f;
+}
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 120rem;
-  margin: 10rem auto 0 auto;
 }
-.site_container .site_wrap ul {
-  width: 25%;
-  height: 80rem;
-  border-left: 0.1rem solid #2a3239;
-  text-align: center;
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li > a {
+  display: block;
+  width: 16rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #fff;
 }
-.site_container .site_wrap ul:nth-child(4) {
-  border-right: 0.1rem solid #2a3239;
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li > a:before {
+  position: absolute;
+  top: 1.5rem;
+  right: 16.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url("../images/section2_8night/section2_obj_4_star.png") center center/cover no-repeat;
+  content: "";
 }
-.site_container .site_wrap ul li {
-  padding: 2.5rem 0;
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li > a:hover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16rem;
+  height: 4.5rem;
+  background-color: #ffe103;
+  content: "";
+  z-index: -1;
+}
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li > a:hover:before {
+  position: absolute;
+  top: 1.3rem;
+  right: 16.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url("../images/obj_star.png") center center/cover no-repeat;
+  content: "";
+}
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li > a:hover {
+  color: #000;
+}
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li .mo_depth2 {
+  display: none;
+}
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li .mo_depth2 li a {
+  display: block;
+  padding: 1rem 0;
   font-size: 1.6rem;
-}
-.site_container .site_wrap ul li:nth-child(1) {
-  position: relative;
-  padding: 0 0 7rem 0;
-  font-size: 2.4rem;
   color: #fff;
 }
-.site_container .site_wrap ul li:nth-child(1)::after {
-  position: absolute;
-  top: 7rem;
-  left: 50%;
-  width: 1.3rem;
-  height: 1.3rem;
-  background: url(../images/section2_8night/section2_obj_4_star.png) center center/cover no-repeat;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  content: "";
-}
-.site_container .site_wrap ul li.depth1_top {
-  position: relative;
-  padding: 16rem 0 7rem 0;
-  font-size: 2.4rem;
-  color: #fff;
-}
-.site_container .site_wrap ul li.depth1_top::after {
-  position: absolute;
-  top: 23rem;
-  left: 50%;
-  width: 1.3rem;
-  height: 1.3rem;
-  background: url(../images/section2_8night/section2_obj_4_star.png) center center/cover no-repeat;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  content: "";
-}
-.site_container .site_wrap ul li a {
-  color: #fff;
-}
-.site_container .site_wrap ul li a:hover {
+.mo_site_container .mo_site_wrap .mo_depth1_box > ul > li .mo_depth2 li a:hover {
   color: #ffe103;
-}
-.site_container .last_bg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 18.9rem;
-  background: url("../images/sm_obj.png") center center/cover no-repeat;
 }
 
 .ft_container {
@@ -1980,6 +2038,133 @@ body.hidden {
 /* 모바일만 ~767px */
 /* 태블릿부터 768px~ */
 @media screen and (min-width: 768px) {
+  .site_container {
+    display: block;
+    position: fixed;
+    top: -120%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/sm_bg.png") center center/cover no-repeat;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .site_container.siteon {
+    top: 0;
+    z-index: 20;
+  }
+  .site_container .top_menu {
+    position: relative;
+  }
+  .site_container .top_menu .logo {
+    width: 14rem;
+    padding: 2rem;
+  }
+  .site_container .top_menu .logo a {
+    display: block;
+  }
+  .site_container .top_menu .logo a img {
+    width: 100%;
+  }
+  .site_container .top_menu .menu {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .site_container .top_menu .menu li a {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    font-size: 1.4rem;
+    border: 0.1rem solid #fff;
+    border-radius: 1.5rem;
+    color: #fff;
+    text-align: center;
+  }
+  .site_container .top_menu .menu li button {
+    width: 2rem;
+    height: 1.7rem;
+    background: url("../images/close.btn.png") center center/cover no-repeat;
+  }
+  .site_container .site_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 120rem;
+    margin: 10rem auto 0 auto;
+  }
+  .site_container .site_wrap ul {
+    width: 25%;
+    height: 80rem;
+    border-left: 0.1rem solid #2a3239;
+    text-align: center;
+  }
+  .site_container .site_wrap ul:nth-child(4) {
+    border-right: 0.1rem solid #2a3239;
+  }
+  .site_container .site_wrap ul li {
+    padding: 2.5rem 0;
+    font-size: 1.6rem;
+  }
+  .site_container .site_wrap ul li:nth-child(1) {
+    position: relative;
+    padding: 0 0 7rem 0;
+    font-size: 2.4rem;
+    color: #fff;
+  }
+  .site_container .site_wrap ul li:nth-child(1)::after {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: url(../images/section2_8night/section2_obj_4_star.png) center center/cover no-repeat;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: "";
+  }
+  .site_container .site_wrap ul li.depth1_top {
+    position: relative;
+    padding: 16rem 0 7rem 0;
+    font-size: 2.4rem;
+    color: #fff;
+  }
+  .site_container .site_wrap ul li.depth1_top::after {
+    position: absolute;
+    top: 23rem;
+    left: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: url(../images/section2_8night/section2_obj_4_star.png) center center/cover no-repeat;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: "";
+  }
+  .site_container .site_wrap ul li a {
+    color: #fff;
+  }
+  .site_container .site_wrap ul li a:hover {
+    color: #ffe103;
+  }
+  .site_container .last_bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 18.9rem;
+    background: url("../images/sm_obj.png") center center/cover no-repeat;
+  }
+  .mo_site_container {
+    display: none;
+  }
   .ft_container .ft_wrap address ul li a.ft_line {
     position: relative;
   }
@@ -2091,5 +2276,14 @@ body.hidden {
     border-radius: 1.5rem;
     color: #fff;
     text-align: center;
+  }
+  .hd_container .hd_wrap .menu li .mo_ham_on {
+    display: none;
+  }
+  .hd_container .hd_wrap .menu li .ham_on {
+    display: block;
+    width: 2rem;
+    height: 1.7rem;
+    background: url("../images/header/ham.png") center center/cover no-repeat;
   }
 }

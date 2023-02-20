@@ -27,10 +27,19 @@ $(function(){
         $(".hd_wrap").removeClass("active");
         $(".depth2").removeClass("boxon");
     });
-
-
     $(".ham_on").click(function(){
         $("body").toggleClass("hidden");
         $(".site_container").toggleClass("siteon");
+    })
+
+    $(".mo_depth1 > a").click(function(){
+        $(this).parent().parent().siblings().find(".mo_depth2").stop().slideUp(400);
+        $(this).next().stop().slideToggle(400);
+    });
+
+    $(".mo_ham_on").click(function(){
+        $("body").toggleClass("hidden");
+        $(".modal").toggleClass("modal_on")
+        $(".mo_site_wrap").toggleClass("mo_right");
     })
 })
