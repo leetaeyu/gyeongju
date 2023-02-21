@@ -269,6 +269,15 @@
             }
         }
     }
+    .sns_container {
+        .sns_wrap {
+            .main_img_box {
+                div {
+                    width: 50rem;
+                }
+            }
+        }
+    }
     .menu_container {
         .menu_wrap {
             >h3 {
@@ -366,6 +375,28 @@
                 animation-duration:3s;
                 animation-delay:2s;
                 animation-iteration-count:infinite;
+            }
+        }
+    }
+    .sns_container {
+        .sns_wrap {
+            .main_img_box {
+                align-items: inherit;
+                flex-direction: inherit;
+                gap:10rem;
+                div {
+                    &:nth-child(2) {
+                        margin-top: 42rem;
+                    }
+                    ul {
+                        li {
+                            font-size: 2.4rem;
+                            &.sns_item2 {
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -698,6 +729,40 @@
         padding-top: 20rem;
         .more {
             display: none;
+        }
+    }
+    .sns_container {
+        .sns_wrap {
+            padding-top: 30rem;
+            h2 {
+                font-size: 4.8rem;
+            }
+            h3 {
+                padding: 3rem 0 23rem 0;
+            }
+            .main_img_box {
+                gap:20rem;
+            }
+            .sns_link {
+                padding-bottom: 5rem;
+                a {
+                    width: 35rem;
+                    margin: 30rem auto 0 auto;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        .top_right_cloud {
+            display: block;
+            position: absolute;
+            top:32rem;
+            right: 0;
+        }
+        .bottom_left_cloud {
+            display: block;
+            position: absolute;
+            bottom: 15rem;
+            left: 0;
         }
     }
     .menu_container {

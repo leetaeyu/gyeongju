@@ -19,7 +19,7 @@ main {
                 align-items: center;
                 .moon {
                     width: 13rem;
-                    height: 13rem;
+                    height: 23rem;
                     padding-top: 10rem;
                     img {
                         width: 100%;
@@ -660,6 +660,92 @@ main {
             color:$wh;
             text-align: center;
         }
+    }
+}
+.sns_container {
+    position: relative;
+    width: 100%;
+    background: url('../images/bg_star2.png') center center / cover no-repeat ;
+    .sns_wrap {
+        max-width: 166rem;
+        margin: 0 auto;
+        padding-top: 15rem;
+        h2 {
+            font-size: 3.5rem;
+            color:$wh;
+            text-align: center;
+        }
+        h3 {
+            padding: 3rem 0 10rem 0;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color:$wh;
+            text-align: center;
+        }
+        .main_img_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            div {
+                position: relative;
+                width: 32.5rem;
+                padding-bottom: 5rem;
+                img {
+                    width: 100%;
+                }
+                ul {
+                    padding-top: 4rem;
+                    li {
+                        font-size: 2rem;
+                        font-weight: bold;
+                        color:$wh;
+                        &.sns_item2 {
+                            padding-top: 2rem;
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            span {
+                                color:#ffe103;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sns_link {
+            a {
+                position: relative;
+                display:block;
+                width: 33rem;
+                margin: 5rem auto 0 auto;
+                padding: 1.5rem 6rem 1.5rem 3rem;
+                font-size: 1.7rem;
+                font-weight: bold;
+                color:$bk;
+                border-radius: 3rem;
+                background-color: #ffe103;
+                text-align: center;
+                transition: 0.3s;
+                &:hover {
+                    scale: 1.01;
+                }
+                span {
+                    position: absolute;
+                    top:50%;
+                    right: 2.8rem;
+                    width: 1.7rem;
+                    height: 1.5rem;
+                    background: url('../images/section1_video/section1_arrow.png') center center / cover no-repeat;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    .top_right_cloud {
+        display: none;
+    }
+    .bottom_left_cloud {
+        display: none;
     }
 }
 .menu_container {
