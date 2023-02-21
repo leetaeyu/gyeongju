@@ -499,7 +499,6 @@ main {
   border-radius: 50%;
   background-color: #eebb1f;
   cursor: pointer;
-  z-index: 1;
 }
 .night_container .night_wrap .night_swiper .night_box .night .prev .left {
   display: inline-block;
@@ -527,7 +526,6 @@ main {
   color: #fff;
   background-color: #9539e3;
   cursor: pointer;
-  z-index: 1;
 }
 .night_container .night_wrap .night_swiper .night_box .night .next .right {
   display: inline-block;
@@ -960,8 +958,10 @@ main {
   opacity: 0;
   -webkit-transform: translateY(15rem);
           transform: translateY(15rem);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .ani_left {
@@ -2029,10 +2029,13 @@ body.hidden {
   color: #ffe103;
 }
 .ft_container .ft_wrap address > div {
-  padding: 2rem 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #3e474f;
   text-align: center;
+}
+.ft_container .ft_wrap address > div.copy {
+  padding: 2rem 0 0 0;
+  font-size: 1.4rem;
 }
 
 /* 모바일만 ~767px */

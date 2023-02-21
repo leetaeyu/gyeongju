@@ -42,4 +42,10 @@ $(function(){
         $(".modal").toggleClass("modal_on")
         $(".mo_site_wrap").toggleClass("mo_right");
     })
+
+    $("a").click(function(){
+        if($(this).attr("href") == "#") {
+            return false;
+        }
+    });
 })
