@@ -27,7 +27,7 @@ $(function(){
 
     $(document).scroll(function(){
         scTop = $(document).scrollTop();
-        $(".ani_top, .ani_left").each(function(){
+        $(".ani_top, .ani_left, .visual_label_pc").each(function(){
             let offsetTop = $(this).offset().top - wH;
             //console.log(offsetTop);
             if(scTop > offsetTop) {
