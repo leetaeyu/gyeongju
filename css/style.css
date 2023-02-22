@@ -120,7 +120,6 @@ main {
   margin-top: -9.3rem;
   width: 100%;
   background: url("../images/mainvisual/mv_bg2.png") center center/cover no-repeat;
-  z-index: -2;
 }
 .visual_container .visual_wrap {
   max-width: 166rem;
@@ -201,7 +200,7 @@ main {
   width: 100%;
   margin-top: 6rem;
   padding-bottom: 18rem;
-  z-index: -1;
+  z-index: 2;
 }
 .visual_container .imgbox::after {
   position: absolute;
@@ -1610,9 +1609,14 @@ main {
   }
   .visual_container .visual_label_pc {
     display: block;
+    width: 100%;
     height: 6rem;
     background-color: #ffe103;
-    z-index: 1;
+  }
+  .visual_container .visual_label_pc.fixed {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
   }
   .visual_container .visual_label_pc .label_wrap {
     position: relative;
