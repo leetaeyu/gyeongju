@@ -36,6 +36,7 @@ $(function(){
         $(this).parent().siblings().find("a").removeClass("on");
         $(".hd_wrap").removeClass("active");
         $(".depth2").removeClass("boxon");
+        $(".moon").addClass("moon_z")
     });
     $(".depth_on1").mouseenter(function(){
         $(this).parent().parent().siblings(".depth2").removeClass("boxon");
@@ -59,6 +60,7 @@ $(function(){
         $(".depth1 > li > a").removeClass("on");
         $(".hd_wrap").removeClass("active");
         $(".depth2").removeClass("boxon");
+        $(".moon").removeClass("moon_z");
     });
     $(".ham_on").click(function(){
         $("body").toggleClass("hidden");

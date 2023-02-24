@@ -139,9 +139,14 @@ main {
           align-items: center;
 }
 .visual_container .visual_wrap .visual_box .item .moon {
+  position: relative;
   width: 13rem;
   height: 23rem;
   padding-top: 10rem;
+  z-index: 100;
+}
+.visual_container .visual_wrap .visual_box .item .moon.moon_z {
+  z-index: 0;
 }
 .visual_container .visual_wrap .visual_box .item .moon img {
   width: 100%;
@@ -1959,14 +1964,18 @@ body.hidden {
   z-index: 5;
 }
 .hd_container .hd_wrap .logo {
+  position: relative;
   width: 14rem;
   padding: 2rem;
+  z-index: 5;
 }
 .hd_container .hd_wrap .logo a {
   display: block;
+  width: 100%;
 }
 .hd_container .hd_wrap .logo a img {
   width: 100%;
+  height: 100%;
 }
 .hd_container .hd_wrap .gnb {
   display: none;

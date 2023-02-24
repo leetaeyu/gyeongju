@@ -18,9 +18,12 @@ main {
                 flex-direction: column;
                 align-items: center;
                 .moon {
+                    position: relative;
                     width: 13rem;
                     height: 23rem;
                     padding-top: 10rem;
+                    z-index: 100;
+                    &.moon_z {z-index: 0;}
                     img {
                         width: 100%;
                         height: 100%;
