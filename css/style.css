@@ -1956,7 +1956,7 @@ body.hidden {
 .hd_container .hd_wrap {
   position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
 }
 .hd_container .hd_wrap .logo {
   width: 14rem;
@@ -2126,6 +2126,7 @@ body.hidden {
 }
 .mo_site_container .mo_site_wrap .mo_depth1_box > ul > li .mo_depth2 {
   display: none;
+  padding-left: 1.5rem;
 }
 .mo_site_container .mo_site_wrap .mo_depth1_box > ul > li .mo_depth2 li a {
   display: block;
@@ -2199,6 +2200,51 @@ body.hidden {
 .ft_container .ft_wrap address > div.copy {
   padding: 2rem 0 0 0;
   font-size: 1.4rem;
+}
+
+.true_on {
+  position: relative;
+  display: block;
+}
+.true_on::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  right: -1.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffe103;
+  border-radius: 50%;
+}
+
+.true_on2 {
+  position: relative;
+  display: block;
+}
+.true_on2::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  right: 10rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffe103;
+  border-radius: 50%;
+}
+
+.true_on3 {
+  position: relative;
+  display: block;
+}
+.true_on3::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #ffe103;
+  border-radius: 50%;
 }
 
 /* 모바일만 ~767px */
@@ -2466,13 +2512,13 @@ main .main_bg {
   z-index: 1;
 }
 .lnb_container .lnb_wrap .title {
-  position: absolute;
-  top: 13rem;
-  left: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
 }
 .lnb_container .lnb_wrap .title li {
   font-family: "PyeongChangPeace";
@@ -2486,7 +2532,7 @@ main .main_bg {
 }
 .lnb_container .lnb_wrap .title li:nth-child(2) {
   width: 9rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   -webkit-transform: rotate(90deg) translateY(35%);
           transform: rotate(90deg) translateY(35%);
@@ -2508,17 +2554,13 @@ main .main_bg {
 .lnb_container .lnb_wrap .lnb_imgbox .item1 {
   position: absolute;
   top: -5rem;
-  right: 27rem;
+  right: 0;
 }
 .lnb_container .lnb_wrap .lnb_imgbox .item2 {
-  position: absolute;
-  top: 0rem;
-  right: 19rem;
+  display: none;
 }
 .lnb_container .lnb_wrap .lnb_imgbox .item3 {
-  position: absolute;
-  right: 6rem;
-  bottom: -24.5rem;
+  display: none;
 }
 .lnb_container .lnb_wrap .lnb_depth1 {
   display: -webkit-box;
@@ -2555,7 +2597,7 @@ main .main_bg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10rem;
+  gap: 1rem;
   width: 100%;
   margin-top: 4rem;
   padding: 2.5rem 0;
@@ -2565,6 +2607,7 @@ main .main_bg {
   position: relative;
   display: block;
   font-weight: 500;
+  font-size: 1.5rem;
 }
 .lnb_container .lnb_wrap .lnb_depth2 li a:hover {
   font-weight: bold;
@@ -2589,42 +2632,44 @@ main .main_bg {
 }
 .evnet_main_container .event_wrap > h2 {
   max-width: 50%;
-  width: 20rem;
-  height: 20rem;
-  margin: 15rem auto 0 auto;
+  width: 15rem;
+  height: 15rem;
+  margin: 10rem auto 0 auto;
 }
 .evnet_main_container .event_wrap > h2 img {
   width: 100%;
   height: 100%;
 }
 .evnet_main_container .event_wrap .txtbox {
-  padding-top: 13rem;
+  padding-top: 10rem;
   font-family: "PyeongChang";
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   color: #fff;
   text-align: center;
 }
 .evnet_main_container .event_wrap .txtbox .txt1 {
   font-family: "PyeongChangPeace";
-  font-size: 4rem;
+  font-size: 2.1rem;
 }
 .evnet_main_container .event_wrap .txtbox .txt2 {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 .evnet_main_container .event_wrap .txtbox .txt3 {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 .evnet_main_container .event_wrap .poster_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 70%;
-  margin: 20rem auto 0 auto;
+  margin: 0rem auto 0 auto;
 }
 .evnet_main_container .event_wrap .poster_box .img {
   position: relative;
   width: 61.5rem;
-  padding-top: 83.9rem;
+  padding-top: 40rem;
 }
 .evnet_main_container .event_wrap .poster_box .img::after {
   position: absolute;
@@ -2636,14 +2681,14 @@ main .main_bg {
   content: "";
 }
 .evnet_main_container .event_wrap .poster_box .poster_txtbox {
-  width: 50%;
-  padding-left: 5rem;
+  max-width: 90%;
+  margin: 3rem auto 0 auto;
   color: #fff;
   font-family: "PyeongChangPeace";
+  text-align: center;
 }
 .evnet_main_container .event_wrap .poster_box .poster_txtbox h4 {
-  width: 150%;
-  font-size: 5.3rem;
+  font-size: 2.2rem;
   font-weight: 500;
   border-bottom: 0.1rem solid #fff;
 }
@@ -2651,31 +2696,40 @@ main .main_bg {
   padding: 4rem 0 0 2rem;
 }
 .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul:nth-child(2) {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul:nth-child(3) {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li {
-  font-size: 2.7rem;
+  font-size: 2.1rem;
 }
 .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li:nth-child(1) {
   position: relative;
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
 }
-.evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li:nth-child(1)::after {
+.evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li:nth-child(1)::before {
   position: absolute;
-  top: 0.9rem;
+  top: 0.4rem;
   right: -3rem;
   width: 2rem;
   height: 2rem;
   background: url("../images/sub/sub6_staryellow.png") center center/cover no-repeat;
   content: "";
 }
+.evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li:nth-child(1)::after {
+  position: absolute;
+  top: 0.4rem;
+  left: -3rem;
+  width: 2rem;
+  height: 2rem;
+  background: url("../images/sub/sub6_staryellow.png") center center/cover no-repeat;
+  content: "";
+}
 .evnet_main_container .event_wrap .invite_box {
-  max-width: 70%;
-  margin: 25rem auto 0 auto;
+  max-width: 90%;
+  margin: 15rem auto 0 auto;
 }
 .evnet_main_container .event_wrap .invite_box .invite_title {
   font-family: "PyeongChangPeace";
@@ -2690,7 +2744,7 @@ main .main_bg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
@@ -2770,4 +2824,150 @@ main .main_bg {
   font-size: 5rem;
   text-align: center;
   z-index: 1;
+}
+
+/* 모바일만 ~767px */
+/* 태블릿부터 768px~ */
+@media screen and (min-width: 768px) {
+  .lnb_container .lnb_wrap .lnb_depth2 {
+    gap: 5rem;
+  }
+  .evnet_main_container .event_wrap > h2 {
+    width: 18rem;
+    height: 18rem;
+  }
+  .evnet_main_container .event_wrap .poster_box {
+    margin: 10rem auto 0 auto;
+  }
+  .evnet_main_container .event_wrap .poster_box .img {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 83.9rem;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox h4 {
+    font-size: 4.5rem;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul:nth-child(2) {
+    padding-top: 5rem;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul:nth-child(3) {
+    padding-top: 5rem;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li {
+    font-size: 2.5rem;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li:nth-child(1) {
+    font-size: 2.1rem;
+  }
+  .evnet_main_container .event_wrap .invite_box .invite_title {
+    font-size: 2.1rem;
+  }
+}
+/* 태블릿만 768px~1023px */
+/* PC부터 1024px~ */
+/* 작은 PC 1024px~1279px */
+/* PC 1280px~ */
+@media screen and (min-width: 1280px) {
+  .lnb_container .lnb_wrap .title {
+    position: absolute;
+    top: 13rem;
+    left: 6rem;
+    margin-top: -2rem;
+  }
+  .lnb_container .lnb_wrap .title li:nth-child(2) {
+    font-size: 2rem;
+  }
+  .lnb_container .lnb_wrap .lnb_imgbox .item1 {
+    position: absolute;
+    top: -5rem;
+    right: 27rem;
+  }
+  .lnb_container .lnb_wrap .lnb_imgbox .item2 {
+    display: block;
+    position: absolute;
+    top: 0rem;
+    right: 19rem;
+  }
+  .lnb_container .lnb_wrap .lnb_imgbox .item3 {
+    display: block;
+    position: absolute;
+    right: 6rem;
+    bottom: -24.5rem;
+  }
+  .lnb_container .lnb_wrap .lnb_depth2 {
+    gap: 10rem;
+  }
+  .lnb_container .lnb_wrap .lnb_depth2 li a {
+    font-size: 1.6rem;
+  }
+  .evnet_main_container .event_wrap > h2 {
+    width: 20rem;
+    height: 20rem;
+    margin: 15rem auto 0 auto;
+  }
+  .evnet_main_container .event_wrap .txtbox {
+    padding-top: 13rem;
+    font-size: 2.2rem;
+  }
+  .evnet_main_container .event_wrap .txtbox .txt1 {
+    font-size: 4rem;
+  }
+  .evnet_main_container .event_wrap .txtbox .txt2 {
+    padding-top: 5rem;
+  }
+  .evnet_main_container .event_wrap .txtbox .txt3 {
+    padding-top: 7rem;
+  }
+  .evnet_main_container .event_wrap .poster_box {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 10rem auto 0 auto;
+  }
+  .evnet_main_container .event_wrap .poster_box .img {
+    position: relative;
+    max-width: inherit;
+    margin: inherit;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox {
+    width: 50%;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    max-width: inherit;
+    margin: inherit;
+    text-align: inherit;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox h4 {
+    width: 150%;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li {
+    font-size: 2.7rem;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li:nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li:nth-child(1)::before {
+    top: 0.9rem;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox > div ul li:nth-child(1)::after {
+    display: none;
+  }
+  .evnet_main_container .event_wrap .invite_box {
+    max-width: 70%;
+    margin: 25rem auto 0 auto;
+  }
+  .evnet_main_container .event_wrap .invite_box .invite_title {
+    font-size: 2.2rem;
+  }
+  .evnet_main_container .event_wrap .invite_box .invite_flexbox {
+    gap: 8rem;
+  }
+}
+/* PC 1600px~ */
+@media screen and (min-width: 1600px) {
+  .evnet_main_container {
+    width: 100%;
+  }
+  .evnet_main_container .event_wrap .poster_box .poster_txtbox {
+    padding-top: inherit;
+  }
 }
