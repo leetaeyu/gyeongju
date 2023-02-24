@@ -544,6 +544,7 @@ main {
 .introduction_container {
     width: 100%;
     background: url('../images/bg_star2.png') center center / cover no-repeat ;
+    overflow-x: hidden;
     .introduction_wrap {
         max-width: 166rem;
         margin: 0 auto;
@@ -584,9 +585,10 @@ main {
         animation-duration: 80s;
         animation-timing-function: linear;
         animation-iteration-count:infinite;
+        overflow-x: hidden;
         li {
             position: relative;
-            width: 25rem;
+            width: 25rem !important;
             padding-bottom: 20rem;
             a {
                 position: absolute;
@@ -623,6 +625,7 @@ main {
         animation-duration: 130s;
         animation-timing-function: linear;
         animation-iteration-count:infinite;
+        overflow-x: hidden;
         li {
             position: relative;
             width: 25rem;

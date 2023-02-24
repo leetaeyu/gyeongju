@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     &.hidden {overflow: hidden;}
 }
 .hd_container {

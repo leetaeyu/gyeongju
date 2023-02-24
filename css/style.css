@@ -646,6 +646,7 @@ main {
 .introduction_container {
   width: 100%;
   background: url("../images/bg_star2.png") center center/cover no-repeat;
+  overflow-x: hidden;
 }
 .introduction_container .introduction_wrap {
   max-width: 166rem;
@@ -695,10 +696,11 @@ main {
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  overflow-x: hidden;
 }
 .introduction_container .left_show li {
   position: relative;
-  width: 25rem;
+  width: 25rem !important;
   padding-bottom: 20rem;
 }
 .introduction_container .left_show li a {
@@ -778,6 +780,7 @@ main {
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  overflow-x: hidden;
 }
 .introduction_container .right_show li {
   position: relative;
@@ -1953,6 +1956,9 @@ main {
   .visual_container .visual_label_pc .label_wrap .line.line2::before {
     width: 15rem;
   }
+}
+body {
+  overflow-x: hidden;
 }
 body.hidden {
   overflow: hidden;
