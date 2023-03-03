@@ -700,6 +700,7 @@ main {
 }
 .introduction_container .left_show li {
   position: relative;
+  width: 25rem;
   padding-bottom: 20rem;
 }
 .introduction_container .left_show li a {
